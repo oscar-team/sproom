@@ -66,7 +66,7 @@ class Documents extends BaseResource
      * @throws \ReflectionException
      * @throws PendingRequestException
      */
-    public function setResponse(string $documentId, array $requestData): Response
+        public function setResponse(string $documentId, array $requestData): Response
     {
         return $this->connector->send(new SetDocumentResponse($documentId, $requestData));
     }

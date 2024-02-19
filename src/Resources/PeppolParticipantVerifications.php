@@ -12,7 +12,7 @@ use Saloon\Exceptions\InvalidResponseClassException;
 use Saloon\Exceptions\PendingRequestException;
 use Saloon\Http\Response;
 
-class PeppolParticipantVerification extends BaseResource
+class PeppolParticipantVerifications extends BaseResource
 {
     /**
      * @throws InvalidResponseClassException

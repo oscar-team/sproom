@@ -5,7 +5,7 @@ namespace OscarTeam\Sproom;
 use OscarTeam\Sproom\Resources\ChildCompanies;
 use OscarTeam\Sproom\Resources\Companies;
 use OscarTeam\Sproom\Resources\Documents;
-use OscarTeam\Sproom\Resources\PeppolParticipantVerification;
+use OscarTeam\Sproom\Resources\PeppolParticipantVerifications;
 use OscarTeam\Sproom\Resources\Recipients;
 use OscarTeam\Sproom\Resources\Webhooks;
 use Saloon\Http\Connector;
@@ -64,8 +64,8 @@ class SproomClient extends Connector
         return new Webhooks($this);
     }
 
-    public function peppolParticipantVerifications(): PeppolParticipantVerification
+    public function peppolParticipantVerifications(): PeppolParticipantVerifications
     {
-        return new PeppolParticipantVerification($this);
+        return new PeppolParticipantVerifications($this);
     }
 }
