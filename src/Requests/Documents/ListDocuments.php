@@ -9,7 +9,7 @@ class ListDocuments extends Request
 {
     protected Method $method = Method::GET;
 
-    public function __construct(private readonly string $filters)
+    public function __construct(private readonly string $filters = '')
     {
     }
 

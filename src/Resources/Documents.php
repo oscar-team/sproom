@@ -22,7 +22,7 @@ class Documents extends BaseResource
      * @throws \ReflectionException
      * @throws PendingRequestException
      */
-    public function list(string $filters): Response
+    public function list(string $filters = ''): Response
     {
         return $this->connector->send(new ListDocuments($filters));
     }
